@@ -1,0 +1,12 @@
+{
+  "types":[
+    {
+      "name":"org.sirma.diankarailievemployees.services.CsvToPojo$$SpringCGLIB$$0",
+      "customTargetConstructorClass":"java.lang.Object"
+    }
+  ],
+  "lambdaCapturingTypes":[
+  ],
+  "proxies":[
+  ]
+}

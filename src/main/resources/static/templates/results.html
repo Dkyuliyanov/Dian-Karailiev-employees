@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Employee Pair Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Longest Working Employee Pair</h1>
+    <table class="table table-striped mt-3">
+        <thead class="table-dark">
+        <tr>
+            <th>Employee ID #1</th>
+            <th>Employee ID #2</th>
+            <th>Project ID</th>
+            <th>Total Days Worked Together</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="pair : ${employeePairs}">
+            <td th:text="${pair.firstEmployeeId}"></td>
+            <td th:text="${pair.secondEmployeeId}"></td>
+            <td th:text="${pair.projectId}"></td>
+            <td th:text="${pair.daysWorkedTogether}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <a href="/" class="btn btn-primary">Upload Another File</a>
+</div>
+</body>
+</html>
