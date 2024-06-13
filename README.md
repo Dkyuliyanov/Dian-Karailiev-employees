@@ -1,5 +1,5 @@
 
-**NATIVE for Ubuntu 22.04:** 
+**GraalVM NATIVE for Ubuntu 22.04:** 
 
 1. Build with:
 
